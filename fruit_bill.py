@@ -19,4 +19,10 @@ while True:
     elif fruit not in fruit_prices:
         print("Sorry, we don't have that fruit.")
         continue
-
+try:
+        quantity = float(input(f"Enter quantity of {fruit} in kg: "))
+        cost = fruit_prices[fruit] * quantity
+        total_bill += cost
+        print(f"{quantity} kg of {fruit} costs ₹{cost}")
+    except ValueError:
+        print("Invalid quantity. Please enter a number.")
