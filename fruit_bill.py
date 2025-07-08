@@ -26,3 +26,6 @@ try:
         print(f"{quantity} kg of {fruit} costs ₹{cost}")
     except ValueError:
         print("Invalid quantity. Please enter a number.")
+        print("\n-------------------------")
+        print(f"Total Bill: ₹{total_bill:.2f}")
+        print("Thank you for shopping with us!")
